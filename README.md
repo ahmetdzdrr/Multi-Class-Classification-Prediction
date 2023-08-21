@@ -4,7 +4,6 @@ A multiple classification prediction has been conducted based on the dataset reg
 Car Acceptability Dataset Overview
 
 Greetings everyone,
-
 In this project, we will perform multi-class classification prediction based on the features present in the given dataset. Below are some key details about the dataset that will be used for this prediction:
 
 The dataset contains approximately 1800 rows. There are a total of 7 columns in the dataset. The target variable in the dataset is labeled as "class". Here is a brief description of each column in the dataset:
