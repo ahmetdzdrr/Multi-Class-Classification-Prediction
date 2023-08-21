@@ -2,6 +2,7 @@
 A multiple classification prediction has been conducted based on the dataset regarding the acceptability of cars. In the predictions made, various operations have been performed on the class attribute.
 
 Car Acceptability Dataset Overview
+
 Greetings everyone,
 
 In this project, we will perform multi-class classification prediction based on the features present in the given dataset. Below are some key details about the dataset that will be used for this prediction:
@@ -54,6 +55,7 @@ Examples: unacc (unacceptable), acc (acceptable), good, v-good (very good)
 **************************************************************************************************
 
 Summary of Data Quality Checks
+
 Shape: The dataset consists of a total of {{num_rows}} rows and {{num_columns}} columns.
 
 Info: The dataset information provides details about the data types, non-null counts, and memory usage.
@@ -72,12 +74,14 @@ Describe: Descriptive statistics including mean, standard deviation, minimum, 5t
 **************************************************************************************************
 
 Summary of Unexpected Value Check
+
 The function iterates through each categorical column in the dataset. It checks for values that contain certain special characters such as !, ?, @, and others. These unexpected values might indicate data entry errors or anomalies.
 
 **************************************************************************************************
 **************************************************************************************************
 
 Summary of Special Character Replacement and Unexpected Value Check
+
 The replace_special_chars function uses regular expressions to remove certain special characters from the categorical columns in the dataset.
 
 For each column, the function iterates through the DataFrame, applies the special character replacement, and then replaces any empty values with NaN using np.nan.
@@ -90,6 +94,7 @@ The function outputs the results for each categorical column
 **************************************************************************************************
 
 Summary of Null Values Visualization
+
 The code calculates the count and percentage of null values in each column of the dataset.
 
 The horizontal bar chart is generated using Matplotlib to visually represent the percentage of null and non-null values for each column.
@@ -102,7 +107,7 @@ The function autolabel adds labels to the bars to display the percentage values.
 
 This visualization provides an insightful overview of the distribution of null values in the dataset, aiding in identifying columns with significant missing data.
 
-https://www.kaggleusercontent.com/kf/140583573/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..oEW6c_gTn7xBqv2-5e7obQ.81frj1bE0KrRRyO7yDrmY9ApLvI68PjAEdbDBbqdsyz6h4xFlVzy42TLbCEErDNgUM9ph0smMx8WupBZJjWAC5Oxh0tNCSmCKArSv210uv_2-y17RMObHi6JLdkJpIqA6FnVABOHI1rNTRJ2ODDL3vNmNdliuPow9YcLX_AqyIlgrt3CAu9HRpNTDsJi53BFZuat8wVpPG-tYTFn36MtAXhlOsf9O1vdo5cZY1IN4yGEgUa64uAMwPreJJl4k4iMRNtQETwO-uxpMgzMFGTK6WVV3ndwX7Xg1nYbAeYnr5RLX6Pcm5V1ljiUZ4W8lZmEUyICCzaKS1lHXhoz5WlJKkrVCI0ZPwqMDMyL-eUUYUg4TIiz3y2I_cRwolll93Gmuzy6jzZwvyHUnbvHHANaQH7tsSzWrgiqEiaGK86lzD5MTdM0mvdO-iHRSPQ7sN-CG8PPkSBSngzb7LyWPKkC-lRjUDgWQ4HinTWFz-cj4WGVIxgZ2CFHYOtpudr2bEWz45kHKMnC3qSEiMMcKv0exTiDnf2SHer4KxpX7yHe4jAmd1qR9_Q-_1sT6J0NLRyeVZ1Ju4msIh9EO1qYVfMBNFaO6e3q0-6wfx9SEfeXxB7W7CimGmNqDMZxudSrqXMtiVNMPCa7YURQnAqXK7tjqn4ZIOceSh76HOCoAWGgDyme9YYax_hTqWUXnwAibd5D.xNq51_8XgbW3tXoXEzNYew/__results___files/__results___14_0.png
+![__results___14_0](https://github.com/ahmetdzdrr/Multi-Class-Classification-Prediction/assets/117534684/8ed6294b-3254-464d-83a8-850d044a693e)
 
 **************************************************************************************************
 **************************************************************************************************
@@ -123,11 +128,69 @@ Text labels are added above each bar to display the corresponding count.
 
 The function also handles the layout and display of plots based on the specified grid layout.
 
-https://www.kaggleusercontent.com/kf/140583573/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ci0rr0jGil0NFh_ilorzkA.8vf71IxTax30c3wbuHawcI7wplfMx4JiP9eB_48I-lYg0BBAysPADoekkaTjXY4C4VSGSh47hVr-XxMmdHPawwd4Mpd3sYHcg6a_BYvwgfrWlUKXjcT2sVohYRIWunx9rAgpGzhi1Pl6V7xotlSGtBr1bBTwdJiDU2dm8--BLOOSA-09hu5ndKMc7gKZya93XrUnwYRJRxCUdlzBr5Tnk5n-nAsl9_AZrTiQ8JE69BWkhXY6m9akcK6-Hmgq8F7TYYJUtYHHpoF27LqOjxCEv51WzyXcKivhEZ6feS1ImP6ZyrZBWawzPWGORhA3Jn_WRBit95a3RG000ev2iBM0DroVVEu_VH_TXD-QszV_p84KlLoBJUTU4QvwblcwZZ58tmQzEF3IVU3RHj2ZCWkz0CQqcEb3xf2jjTg8S_SH4ZYx-DgtmoocLIqY0_8ugfQqBYxVxM6gjhB-s6lrSyG_updcxomIm4w6Zl-8nhjSFbv2ussIdF8U3tHT4anwx4Xw02IcgAfZZ6vexpgIQzfDQqx4ZBnwBVa5NihzNUXBRNl74LcqJsBtu-GSOM_4Xcc-pxK48ZrE3TQb9bUNh3kMU6nczKdFsWm5YbIbU2-hOs-e-TQksdVinMeR-s9m4V7Q1ddUUfQ72E3JPnC-pAffFlRqQlf3DZPPCkkY4uB_i-9MFhoW1k7KSzLXEUO6x0zE.zq4wYOHbUcRcJTfSbKepxg/__results___files/__results___20_0.png
+![__results___20_0](https://github.com/ahmetdzdrr/Multi-Class-Classification-Prediction/assets/117534684/a0adc867-5145-4e40-b1c3-ad25c0447f2a)
 
 **************************************************************************************************
 **************************************************************************************************
 
 Correlation Matrix
+
+![__results___25_0](https://github.com/ahmetdzdrr/Multi-Class-Classification-Prediction/assets/117534684/28676f14-7210-4e0d-9f15-6c32b686d505)
+
+**************************************************************************************************
+**************************************************************************************************
+
+Model Training, Evaluation, and Result Visualization
+
+In this section, a function named model is defined to train, evaluate, and visualize the performance of a set of machine learning models. Additionally, another function named model_to_dataframe is provided to summarize the results of the model evaluations in a structured DataFrame.
+
+plot_confusion_matrix Function
+
+This function, plot_confusion_matrix, takes true labels (y_true), predicted labels (y_pred), the model's name (model_name), and an axis (ax) to create and display a confusion matrix heatmap. The confusion matrix visually represents the distribution of correct and incorrect predictions for each class.
+
+model Function
+
+The model function performs the following steps for each model specified in the models dictionary:
+
+Fits the model using the resampled training data (X_train_resampled and y_train_resampled). Generates predictions (y_pred) on the test set. Calculates accuracy, precision, recall, and F1 score using various scoring metrics. Stores the evaluation metrics in the results dictionary. Calls the plot_confusion_matrix function to visualize the confusion matrix for the current model. Finally, it displays a grid of confusion matrix heatmaps for each model using matplotlib and returns the results dictionary containing the evaluation metrics.
+
+model_to_dataframe Function
+
+This function, model_to_dataframe, utilizes the model function to evaluate the models' performance and converts the resulting results dictionary into a structured DataFrame. The DataFrame includes columns for 'Accuracy', 'Precision', 'Recall', and 'F1 Score' for each model.
+
+Confusion Matrix
+
+![__results___31_0](https://github.com/ahmetdzdrr/Multi-Class-Classification-Prediction/assets/117534684/159831e2-ab71-474e-9946-e143ae11ff6a)
+
+**************************************************************************************************
+**************************************************************************************************
+
+Summary of Feature Importance Visualization
+
+The function plot_feature_importance is utilized to visualize the importance of features in a machine learning model.
+
+The function accepts a trained model object, a list of feature names, and an optional parameter top_n to specify the number of top features to display.
+
+The function calculates the feature importances from the model and arranges them in descending order.
+
+If top_n is specified, the function selects the top features based on importance scores and their corresponding feature names.
+
+A bar plot is generated using Seaborn's barplot, where the x-axis represents feature importance scores, and the y-axis represents the feature names.
+
+The color palette 'viridis' is used for a visually appealing representation.
+
+The plot is labeled with axes and a title indicating the number of top features displayed.
+
+![__results___36_0](https://github.com/ahmetdzdrr/Multi-Class-Classification-Prediction/assets/117534684/59f2f162-3968-47d4-9841-6baf4e869fee)
+
+
+
+
+
+
+
+
+
+
 
 
